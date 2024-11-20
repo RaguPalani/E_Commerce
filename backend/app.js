@@ -13,8 +13,8 @@ connectDatabase();
 
 app.use(express.json());
 app.use(cors());
-app.use(products);
-app.use(orders);
+app.use("/api",products);
+app.use("/api",orders);
 
 // if (process.env.NODE_ENV == 'production') {
 //     app.use(express.static(path.join(__dirname, '..', 'frontend',  'build')));
