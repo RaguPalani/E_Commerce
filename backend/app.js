@@ -23,6 +23,10 @@ app.use(orders);
 //     });
 // }
 
+app.get("/", (req, res) => {
+    res.send("<h1>Hello...</h1>")
+})
+
 app.listen(process.env.PORT, () => {
     console.log(`Server listening to Port ${process.env.PORT} in ${process.env.NODE_ENV}`)
 });
